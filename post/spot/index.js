@@ -8,7 +8,7 @@ const login = (params) => {
 
 const createSpot = (params) => {
   if ('spot' in params) return params.db.insert(params.spot);
-  else return Promise.resolve({ error: 'No spot attached' });
+  else return Promise.resolve({ error: 'INVALID_SPOT' });
 }
 
 const main = (params) => {
